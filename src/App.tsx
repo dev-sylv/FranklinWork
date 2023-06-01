@@ -1,14 +1,12 @@
-import React from "react";
-import Header from "./Components/Header";
-import Body from "./Components/Body";
+import { RouterProvider } from "react-router-dom";
+import { mainRoute } from "./Router/mainRoute";
 
 const App = () => {
-	return (
-		<div>
-			<Header />
-			<Body />
-		</div>
-	);
+  return (
+    <div>
+      <RouterProvider router={mainRoute} />
+    </div>
+  );
 };
 
 export default App;
